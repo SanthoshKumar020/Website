@@ -1,0 +1,457 @@
+<div class="all">
+  <div class="sidenav">
+    <div class="navtop">
+      <span>Khor™</span>
+      <mat-icon>menu</mat-icon>
+    </div>
+    <div class="toolbar">
+      <div class="first">
+        <mat-icon>school</mat-icon>
+        <h3>Welcome To Akkhor</h3>
+        <p>School Management System</p>
+      </div>
+      <div class="example-container">
+        <input
+          type="search"
+          placeholder="Search Here ..."
+          style="padding-left: 12px"
+        />
+        <div class="second">
+          <mat-icon>language</mat-icon>
+          <span>English<mat-icon>keyboard_arrow_down</mat-icon></span>
+          <mat-icon matBadge="5" matBadgeColor="accent" aria-hidden="false">
+            mail_outline</mat-icon
+          >
+          <mat-icon matBadge="8" matBadgeColor="accent" aria-hidden="false"
+            >notifications_none</mat-icon
+          >
+          <img src="../assets/laptop-user.png" alt="" />
+          <div class="users">
+            <h3>Kazi Fahid</h3>
+            <span>Admin</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="sidemenus" style="display: flex; justify-content: space-between">
+    <span>Dashboard<mat-icon>keyboard_arrow_down</mat-icon></span>
+
+    <div style="background-color: #053e52">
+      <span style="color: yellow">Admin</span>
+      <span>Student</span>
+      <span>Parents</span>
+    </div>
+    <span>Students<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Teachers<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Parents<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Library<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Account<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Class<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Subject<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Attendance<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Transport<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Hostel<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Notice<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Message<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Elements<mat-icon>keyboard_arrow_down</mat-icon></span>
+    <span>Account<mat-icon>keyboard_arrow_down</mat-icon></span>
+  </div>
+  <div class="containers">
+    <div class="page">
+      <p>Home</p>
+      <p style="color: blue">Admin</p>
+    </div>
+    <div class="types">
+      <div class="students">
+        <div>
+          <span class="material-symbols-outlined" style="color: green">
+            groups
+          </span>
+          <p>Students</p>
+        </div>
+        <div>
+          <h3>50,000</h3>
+        </div>
+      </div>
+      <div class="teachers">
+        <div>
+          <mat-icon style="color: blue">people</mat-icon>
+          <p>Teachers</p>
+        </div>
+        <div><h3>10,000</h3></div>
+      </div>
+      <div class="parents">
+        <div>
+          <span class="material-symbols-outlined" style="color: yellow">
+            person_add
+          </span>
+          <p>Parents</p>
+        </div>
+        <div><h3>15,000</h3></div>
+      </div>
+      <div class="total-earnings">
+        <div>
+          <span
+            class="material-symbols-outlined"
+            style="color: rgb(6, 62, 103)"
+          >
+            local_atm
+          </span>
+          <p>Total Earnings</p>
+        </div>
+        <div>
+          <h3><mat-icon> attach_money</mat-icon>30,000</h3>
+        </div>
+      </div>
+    </div>
+    <div class="media">
+      <div class="graph">
+        <div class="graphhead">
+          <div>Fees Collection & Expenses</div>
+          <div>
+            <span class="material-symbols-outlined" style="color: yellow">
+              expand_more </span
+            ><span class="material-symbols-outlined" style="color: green">
+              refresh </span
+            ><span class="material-symbols-outlined" style="color: red">
+              close
+            </span>
+          </div>
+        </div>
+        <ngx-charts-bar-vertical
+          [view]="view"
+          [scheme]="colorScheme"
+          [results]="single"
+          [gradient]="gradient"
+          [xAxis]="showXAxis"
+          [yAxis]="showYAxis"
+          [legend]="showLegend"
+          [showXAxisLabel]="showXAxisLabel"
+          [showYAxisLabel]="showYAxisLabel"
+          (select)="onSelect($event)"
+        >
+        </ngx-charts-bar-vertical>
+      </div>
+      <div class="socialmedia">
+        <div class="firstmedia">
+          <div class="fb">
+            <div>
+              <mat-icon style="background-color: transparent"
+                >facebook</mat-icon
+              >
+              <p>
+                Like us <br />
+                on Facebook
+              </p>
+            </div>
+            <div class="fbsecond">
+              <p>|</p>
+              <p>30,000</p>
+            </div>
+          </div>
+          <div class="twitter">
+            <div>
+              <img src="../assets/twitter.png" width="20px" height="20px" />
+              <p>
+                Follow us <br />
+                on Twitter
+              </p>
+            </div>
+            <div class="twittersecond">
+              <p>|</p>
+              <p>13,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="secondmedia">
+          <div class="google">
+            <div>
+              <img
+                src="../assets/google-plus (1).png"
+                style="width: 20px; height: 20px; color: white"
+              />
+              <p>
+                Follow us <br />
+                on Google Plus
+              </p>
+            </div>
+            <div class="googlesecond">
+              <p>|</p>
+              <p>9,000</p>
+            </div>
+          </div>
+          <div class="linkedin">
+            <div>
+              <img
+                src="../assets/linkedin.png"
+                style="width: 20px; height: 20px"
+              />
+              <p>
+                Follow us <br />
+                on Linkedin
+              </p>
+            </div>
+            <div class="fbsecond">
+              <p>|</p>
+              <p>18,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="calendar">
+        <div class="calenderhead">
+          <div>Event Calender</div>
+          <div>
+            <span class="material-symbols-outlined" style="color: yellow">
+              expand_more </span
+            ><span class="material-symbols-outlined" style="color: green">
+              refresh </span
+            ><span class="material-symbols-outlined" style="color: red">
+              close
+            </span>
+          </div>
+        </div>
+
+        <div class="calendar-header">
+          <span
+            class="material-symbols-outlined"
+            style="background-color: yellow"
+          >
+            chevron_left </span
+          >March 2024<span
+            class="material-symbols-outlined"
+            style="background-color: #f2f2f2"
+          >
+            chevron_right
+          </span>
+        </div>
+        <div class="calendar-days">
+          <div class="calendar-day">Sun</div>
+          <div class="calendar-day">Mon</div>
+          <div class="calendar-day">Tue</div>
+          <div class="calendar-day">Wed</div>
+          <div class="calendar-day">Thu</div>
+          <div class="calendar-day">Fri</div>
+          <div class="calendar-day">Sat</div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day"></div>
+          <div class="calendar-day">1</div>
+          <div class="calendar-day">2</div>
+          <div class="calendar-day">3</div>
+          <div class="calendar-day">4</div>
+          <div class="calendar-day">5</div>
+          <div class="calendar-day">6</div>
+          <div class="calendar-day">7</div>
+          <div class="calendar-day">8</div>
+          <div class="calendar-day">9</div>
+          <div class="calendar-day">10</div>
+          <div class="calendar-day">11</div>
+          <div class="calendar-day">12</div>
+          <div class="calendar-day">13</div>
+          <div class="calendar-day">
+            <span
+              style="
+                background-color: purple;
+                padding: 4px;
+                padding-left: 15px;
+                padding-right: 16px;
+                border-radius: 11px;
+              "
+              >14</span
+            >
+          </div>
+          <div class="calendar-day">15</div>
+          <div class="calendar-day">16</div>
+          <div class="calendar-day">17</div>
+          <div class="calendar-day">
+            <span
+              style="
+                background-color: green;
+                padding: 4px;
+                padding-left: 15px;
+                padding-right: 16px;
+                border-radius: 11px;
+              "
+              >18</span
+            >
+          </div>
+          <div class="calendar-day">19</div>
+          <div class="calendar-day">20</div>
+          <div class="calendar-day">21</div>
+          <div class="calendar-day">22</div>
+          <div class="calendar-day">23</div>
+          <div class="calendar-day">24</div>
+          <div class="calendar-day">25</div>
+          <div class="calendar-day">26</div>
+          <div class="calendar-day">
+            <span
+              style="
+                background-color: pink;
+                padding: 4px;
+                padding-left: 15px;
+                padding-right: 16px;
+                border-radius: 11px;
+              "
+              >27</span
+            >
+          </div>
+          <div class="calendar-day">28</div>
+          <div class="calendar-day">29</div>
+          <div class="calendar-day">30</div>
+          <div class="calendar-day">31</div>
+        </div>
+      </div>
+
+      <div class="notice">
+        <div class="noticehead">
+          <div><h4>Notice Board</h4></div>
+          <div>
+            <span class="material-symbols-outlined" style="color: yellow">
+              expand_more </span
+            ><span class="material-symbols-outlined" style="color: green">
+              refresh </span
+            ><span class="material-symbols-outlined" style="color: red">
+              close
+            </span>
+          </div>
+        </div>
+        <div class="noticedetails">
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          >
+        </div>
+      </div>
+      <div class="recentActivities">
+        <div class="recenthead">
+          <div><h4>Recent Activities</h4></div>
+          <div>
+            <span class="material-symbols-outlined" style="color: yellow">
+              expand_more </span
+            ><span class="material-symbols-outlined" style="color: green">
+              refresh </span
+            ><span class="material-symbols-outlined" style="color: red">
+              close
+            </span>
+          </div>
+        </div>
+        <div class="active">
+          <mat-vertical-stepper
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 0.9rem;
+              font-size: 10px;
+            "
+          >
+            <mat-step class="activiy">
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >9 minutes ago <br />You followed Olivia Williamson</span
+                ></ng-template
+              >
+            </mat-step>
+            <mat-step class="activity">
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >20 minutes ago <br />You Subscribed to Harold Fuller</span
+                ></ng-template
+              >
+            </mat-step>
+            <mat-step class="activity">
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >30 minutes ago <br />You Updated your profile picture</span
+                ></ng-template
+              >
+            </mat-step>
+            <mat-step class="activity">
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >35 minutes ago <br />You deleted homepage.psd</span
+                ></ng-template
+              >
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >35 minutes ago <br />You deleted homepage.psd</span
+                ></ng-template
+              >
+            </mat-step>
+            <mat-step class="activity">
+              <ng-template matStepLabel
+                ><span style="font-size: 12px"
+                  >35 minutes ago <br />You deleted homepage.psd</span
+                ></ng-template
+              >
+            </mat-step>
+          </mat-vertical-stepper>
+        </div>
+        <!-- <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          >
+          <span>16 May,2017 <br /></span
+          ><span style="color: blueviolet"
+            >Jennyfar Lopez
+            <p>5 mins ago</p></span
+          >
+          <span
+            >Great School managemenesom simply dumy text of the printing.</span
+          > -->
+      </div>
+    </div>
+  </div>
+</div>
